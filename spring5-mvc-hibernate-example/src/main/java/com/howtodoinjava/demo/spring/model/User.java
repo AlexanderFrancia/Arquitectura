@@ -16,9 +16,8 @@ import org.hibernate.validator.constraints.NotEmpty;
 public class User {
 
    @Id
-   @GeneratedValue
    @Column(name = "USER_ID")
-   private Long id;
+   private Long id=0L;
 
    @Column(name = "USER_NAME")
    @Size(max = 20, min = 3, message = "{user.name.invalid}")

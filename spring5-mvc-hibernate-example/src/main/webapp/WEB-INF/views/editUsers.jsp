@@ -4,9 +4,10 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
-		<head>
+	<head>
+            
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Spring5 MVC Hibernate Demo</title>
+                
 		<style type="text/css">
 			.error {
 				color: red;
