@@ -8,17 +8,11 @@ and open the template in the editor.
     Author     : sala4
 */
 
-body {
-    background-color: lightblue;
+*{
+    margin: 0px;
+    padding:  0px;
+    list-style: none;
 }
-
-h2 {
-    color: Blue;
-    text-align: left;
-}
-
-p {
-    font-family: verdana;
-    font-size: 20px;
-    font-color: Red;
+body{
+    background-color: red;
 }
