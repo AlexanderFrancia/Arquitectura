@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <link rel="stylesheet" type="text/css" href="../../../resources/css/estilos.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/estilos.css"/>
         <style type="text/css">
             .error {
 		color: red;

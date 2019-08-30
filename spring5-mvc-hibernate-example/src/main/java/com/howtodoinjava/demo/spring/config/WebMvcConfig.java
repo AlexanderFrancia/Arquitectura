@@ -18,14 +18,7 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(basePackages = { "com.howtodoinjava.demo.spring"})
 public class WebMvcConfig implements WebMvcConfigurer {
 
-   @Override
-public void addResourceHandlers(ResourceHandlerRegistry registry) {
-    registry
-      .addResourceHandler("/files/**")
-      .addResourceLocations("file:/opt/files/");
- }
-
-    @Bean
+   @Bean
    public InternalResourceViewResolver resolver() {
       InternalResourceViewResolver resolver = new InternalResourceViewResolver();
       resolver.setViewClass(JstlView.class);
@@ -47,4 +40,10 @@ public void addResourceHandlers(ResourceHandlerRegistry registry) {
       validator.setValidationMessageSource(messageSource());
       return validator;
    }
+   
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+    }
+   
 }
