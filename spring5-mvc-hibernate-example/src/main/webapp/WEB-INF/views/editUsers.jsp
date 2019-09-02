@@ -63,5 +63,24 @@
 	</c:forEach>
 	</table>
         
+        
+        
+        <div class="login-box">
+            <img src="resources/images/logo.png" alt="Logo de login"/>
+            <h1>Ingresar</h1>
+            <form>
+                <label for="Nombre">Nombre de usuario</label>
+                <input type="text" placeholder="Nombre de usuario">
+                
+                <label for="ctr">Contraseña</label>
+                <input type="password" placeholder="Contraseña">
+                
+                <input type="submit" value="Iniciar sesión">
+            
+                <a href="#">Olvido la contraseña</a>
+                <a href="WEB-INF/views/home.jsp">Registrarse</a>
+                  
+            </form>
+        </div>
     </body>
 </html>
