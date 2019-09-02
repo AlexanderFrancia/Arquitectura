@@ -78,7 +78,7 @@
                 <input type="submit" value="Iniciar sesión">
             
                 <a href="#">Olvido la contraseña</a>
-                <a href="WEB-INF/views/home.jsp">Registrarse</a>
+                <a href="home">Registrarse</a>
                   
             </form>
         </div>
