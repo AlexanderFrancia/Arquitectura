@@ -78,7 +78,7 @@
 					<li><a href="blog">Blog</a></li>
 					<li><a href="portfolio">Portfolio</a></li>
 					<li><a href="about">About</a></li>
-					<li class="fh5co-active"><a href="contact.jsp">Contact</a></li>
+					<li class="fh5co-active"><a href="contact">Contact</a></li>
 				</ul>
 			</nav>
 
