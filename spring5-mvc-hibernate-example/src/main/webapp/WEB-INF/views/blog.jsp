@@ -72,19 +72,19 @@
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 
-			<h1 id="fh5co-logo"><a href="editUsers">Marble</a></h1>
+			<h1 id="fh5co-logo"><a href="editUsers">Max Mujer</a></h1>
 			<nav id="fh5co-main-menu" role="navigation">
 				<ul>
-					<li><a href="editUsers">Home</a></li>
-					<li class="fh5co-active"><a href="blog">Blog</a></li>
-					<li><a href="portfolio">Portfolio</a></li>
-					<li><a href="about">About</a></li>
-					<li><a href="contact">Contact</a></li>
+					<li><a href="editUsers">Inicio</a></li>
+					<li class="fh5co-active"><a href="blog">Información</a></li>
+					<li><a href="portfolio">Noticias</a></li>
+					<li><a href="about">Foro</a></li>
+					<li><a href="contact">Denuncias</a></li>
 				</ul>
 			</nav>
 
 			<div class="fh5co-footer">
-                            <p><small><span>&copy; 2016 Blend Free HTML5. All Rights Reserved.</span> <span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></span></small></p>
+
 				<ul>
 					<li><a href="#"><i class="icon-facebook2"></i></a></li>
 					<li><a href="#"><i class="icon-twitter2"></i></a></li>
