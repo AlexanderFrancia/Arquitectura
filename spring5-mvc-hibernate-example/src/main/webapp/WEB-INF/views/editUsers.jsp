@@ -24,63 +24,50 @@
     </head>
     <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	
-        <h1>Input Form</h1>
+        <div class="login-box" align-items="center">
+            <img src="resources/images/logo.png" alt="Logo de login" style="margin-left:650px;" />
+        </div>
 	
         <form:form action="addUser" method="post" modelAttribute="user">
-            <table>
-                <tr>
-                    <td>Name</td>
-                    <td>
+            <table style="margin: 0 auto; border: hidden;" >
+                <tr style="border: hidden;text-align: center">
+                    <td style="border: hidden;text-align: center"><p style="font: oblique bold 180% fantasy; color: #ffffff;">Name</p></td>
+                    <td style="border: hidden">
                         <form:input path="name" /> <br />
                         <form:errors path="name" cssClass="error" />
                     </td>
                 </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>
+                <tr style="border: hidden;text-align: center">
+                    <td style="border: hidden;text-align: center"><p style="font: oblique bold 180% fantasy; color: #ffffff;">Email</p></td>
+                    <td style="border: hidden;">
                         <form:input path="email" /> <br />
                         <form:errors path="email" cssClass="error" />
                     </td>
                 </tr>
-                <tr>
+                <tr style="border: hidden;text-align: center">
                     <td colspan="2"><button type="submit">Submit</button></td>
                 </tr>
             </table>
-	</form:form>
+	</form:form> 
         
-	<h2>Users List</h2>
+	<h2 style="text-align: center;"><p style="font: oblique bold 190% fantasy; color: #c7254e;">Lista de usuarios</p></h2>
         
-	<table>
-            <tr>
-		<td><strong>Name</strong></td>
-		<td><strong>Email</strong></td>
+	<table style="margin: 0 auto;border: hidden;text-align: center">
+            <tr style="border: hidden;text-align: center">
+                <td><strong><p style="font: oblique bold 120% fantasy; color: #c7254e;">Nombre</p></strong></td>
+		<td><strong><p style="font: oblique bold 120% fantasy; color: #c7254e;">Email</p></strong></td>
             </tr>
 	<c:forEach items="${users}" var="user">
-            <tr>
-		<td>${user.name}</td>
-		<td>${user.email}</td>
+            <tr style="border: hidden;text-align: center">
+		<td style="border: hidden;text-align: center">${user.name}</td>
+		<td style="border: hidden;text-align: center">${user.email}</td>
             </tr>
 	</c:forEach>
-	</table>
-        
-        
-        
-        <div class="login-box">
-            <img src="resources/images/logo.png" alt="Logo de login"/>
-            <h1>Ingresar</h1>
-            <form>
-                <label for="Nombre">Nombre de usuario</label>
-                <input type="text" placeholder="Nombre de usuario">
-                
-                <label for="ctr">Contraseña</label>
-                <input type="password" placeholder="Contraseña">
-                
-                <input type="submit" value="Iniciar sesión">
             
-                <a href="#">Olvido la contraseña</a>
-                <a href="home">Registrarse</a>
-                  
-            </form>
-        </div>
+	</table>
+        <a style="margin-left:765px;" href="home">ingresar</a>
+        
+        
+       
     </body>
 </html>

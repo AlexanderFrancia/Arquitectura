@@ -21,7 +21,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@GetMapping("editUsers")
+	@GetMapping("/")
 	public String userForm(Locale locale, Model model) {
 		model.addAttribute("users", userService.list());
 		return "editUsers";
