@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.howtodoinjava.demo.spring.model.User;
 import com.howtodoinjava.demo.spring.service.UserService;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class UserController {
@@ -41,6 +42,13 @@ public class UserController {
 		}
 
 		userService.save(user);
+		return "redirect:/";
+	}
+        
+        @GetMapping("/DeleteUser")
+	public String saveUser(@RequestParam("del") String Del ) {
+
+		userService.delete(Del);
 		return "redirect:/";
 	}
 }

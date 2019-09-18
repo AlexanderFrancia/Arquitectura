@@ -28,4 +28,16 @@ public class UserDaoImp implements UserDao {
       return query.getResultList();
    }
 
+    @Override
+    public void delete(String Del) {
+        User user=sessionFactory.getCurrentSession().get(User.class, Del);
+        sessionFactory.getCurrentSession().delete(user);
+    }
+    
+    @Override
+    public void update(String Upd) {
+        User user=sessionFactory.getCurrentSession().get(User.class, Upd);
+        sessionFactory.getCurrentSession().update(user);
+    }
+
 }

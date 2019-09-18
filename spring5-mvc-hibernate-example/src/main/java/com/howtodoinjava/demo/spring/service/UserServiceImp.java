@@ -25,4 +25,9 @@ public class UserServiceImp implements UserService {
       return userDao.list();
    }
 
+    @Transactional(readOnly = true)
+    public void delete(String Del) {
+        userDao.delete(Del);
+    }
+
 }

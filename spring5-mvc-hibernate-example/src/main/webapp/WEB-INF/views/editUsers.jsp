@@ -56,11 +56,17 @@
             <tr style="border: hidden;text-align: center">
                 <td><strong><p style="font: oblique bold 120% fantasy; color: #c7254e;">Nombre</p></strong></td>
 		<td><strong><p style="font: oblique bold 120% fantasy; color: #c7254e;">Email</p></strong></td>
+                <td><strong><p style="font: oblique bold 120% fantasy; color: #c7254e;">Control</p></strong></td>
             </tr>
 	<c:forEach items="${users}" var="user">
             <tr style="border: hidden;text-align: center">
+                <td style="border: hidden;text-align: center">${user.name}</td>
 		<td style="border: hidden;text-align: center">${user.name}</td>
 		<td style="border: hidden;text-align: center">${user.email}</td>
+                <td style="border: hidden;text-align: center">
+                    <button href="UpdateUser"></button>
+                    <button href="DeleteUser?del="${user.email}></button>
+                </td>
             </tr>
 	</c:forEach>
             
